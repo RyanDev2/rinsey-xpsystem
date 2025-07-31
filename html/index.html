@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="xp-panel">
+            <div class="header">
+                <h1 class="title">Experience System</h1>
+                <p class="subtitle">Track your progress across all jobs</p>
+            </div>
+
+            <div class="jobs-grid" id="jobsGrid">
+            </div>
+
+            <div class="footer">
+                <div class="stats-summary">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Level</span>
+                        <span class="stat-value" id="totalLevel">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Total XP</span>
+                        <span class="stat-value" id="totalXP">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Highest Level</span>
+                        <span class="stat-value" id="highestLevel">1</span>
+                    </div>
+                </div>
+                
+                <button class="close-btn" id="closeBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="level-up-overlay" id="levelUpOverlay">
+        <div class="level-up-content">
+            <div class="level-up-icon">🎉</div>
+            <h2 class="level-up-title">LEVEL UP!</h2>
+            <p class="level-up-job" id="levelUpJob">Job Name</p>
+            <p class="level-up-level" id="levelUpLevel">Level 2</p>
+        </div>
+    </div>
+
+    <div class="xp-toast" id="xpToast">
+        <div class="toast-content">
+            <div class="toast-icon">+</div>
+            <div class="toast-text">
+                <span class="toast-amount" id="toastAmount">+25 XP</span>
+                <span class="toast-job" id="toastJob">Coding</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
